@@ -13,6 +13,10 @@
 - HTML, JavaScript
 - StompJS
 
+## Postman API collections
+- https://www.postman.com/crimson-satellite-12712/workspace/tic-tac-toe
+
+
 ## Reference
 아래 두 강의를 따라하며 작성한 코드들입니다.
 - [Tic Tac Toe Game over the Internet | Java, WebSocket, Spring Boot, REST | Backend part by Java Master](https://www.youtube.com/watch?v=XwQJRfv9Mfg)
