@@ -18,6 +18,10 @@
 
 
 ## Reference
-아래 두 강의를 따라하며 작성한 코드들입니다.
-- [Tic Tac Toe Game over the Internet | Java, WebSocket, Spring Boot, REST | Backend part by Java Master](https://www.youtube.com/watch?v=XwQJRfv9Mfg)
-- [Tic Tac Toe Game | Java, HTML, JS, WebSocket, StompJS | Frontend part by Java Master](https://www.youtube.com/watch?v=UP0GJPpMV3c)
+- 아래 두 강의를 따라하며 작성한 코드들입니다.
+  - [Tic Tac Toe Game over the Internet | Java, WebSocket, Spring Boot, REST | Backend part by Java Master](https://www.youtube.com/watch?v=XwQJRfv9Mfg)
+  - [Tic Tac Toe Game | Java, HTML, JS, WebSocket, StompJS | Frontend part by Java Master](https://www.youtube.com/watch?v=UP0GJPpMV3c)
+
+- Original Template Code
+  - [CodePen Home
+    Tic Tac Toe Game - HTML - CSS- JavaScript](https://codepen.io/marxcom/pen/LWQXRX)
