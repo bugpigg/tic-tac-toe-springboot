@@ -1,4 +1,4 @@
-const url = 'https://tic-tac-toe-springboot.herokuapp.com/';
+const url = 'https://tic-tac-toe-springboot.herokuapp.com';
 let stompClient;
 let gameId;
 let playerType;
