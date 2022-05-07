@@ -5,6 +5,18 @@
 ## Overview
 
 
+
+### 배포 주소
+https://tic-tac-toe-springboot.herokuapp.com/
+
+### 개선사항
+- frontend
+  - [x] 버튼 및 레이아웃 수정
+- backend
+  - [x] 자잘한 버그 수정
+  - [ ] 리팩토링
+  - [ ] 테스트코드 추가
+
 ## backend keyword
 - Java
 - WebSocket, Spring Boot
