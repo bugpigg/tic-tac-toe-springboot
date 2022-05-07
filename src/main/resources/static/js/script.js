@@ -12,6 +12,12 @@ function playerTurn(turn, id) {
 }
 
 function makeAMove(type, xCoordinate, yCoordinate) {
+  let nextTurn = ''
+  if (playerType === 'X') {
+    nextTurn = 'O'
+  } else {
+    nextTurn = 'X'
+  }
   $.ajax({
     url: url + "/game/gameplay",
     type: 'POST',
@@ -21,15 +27,11 @@ function makeAMove(type, xCoordinate, yCoordinate) {
       "type": type,
       "coordinateX": xCoordinate,
       "coordinateY": yCoordinate,
-      "gameId": gameId
+      "gameId": gameId,
+      "turn": nextTurn
     }),
     success: function (data) {
       gameOn = false;
-      if (playerType === 'X'){
-        turn = 'O'
-      } else {
-        turn = 'X'
-      }
       displayResponse(data);
     },
     error: function (error) {
@@ -40,6 +42,7 @@ function makeAMove(type, xCoordinate, yCoordinate) {
 
 function displayResponse(data) {
   let board = data.board;
+  turn = data.turn;
   for (let i = 0; i < board.length; i++) {
     for (let j = 0; j < board[i].length; j++) {
       if (board[i][j] === 1) {
@@ -51,7 +54,6 @@ function displayResponse(data) {
       $("#" + id).text(turns[i][j]);
     }
   }
-
   if (data.winner != null) {
     alert("Winner is " + data.winner);
   }

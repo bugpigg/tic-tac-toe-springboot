@@ -11,4 +11,5 @@ public class Game {
     private GameStatus status;
     private int[][] board;
     private TicToe winner;
+    private String turn;
 }

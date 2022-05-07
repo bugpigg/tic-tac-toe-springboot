@@ -9,5 +9,6 @@ public class GamePlay {
     private Integer coordinateX;
     private Integer coordinateY;
     private String gameId;
+    private String turn;
 
 }

@@ -26,6 +26,7 @@ public class GameService {
         game.setGameId(UUID.randomUUID().toString());
         game.setPlayer1(player);
         game.setStatus(NEW);
+        game.setTurn("X");
         GameStorage.getInstance().setGames(game);
         return game;
     }
@@ -41,6 +42,7 @@ public class GameService {
         }
         game.setPlayer2(player2);
         game.setStatus(IN_PROGRESS);
+        game.setTurn("X");
         GameStorage.getInstance().setGames(game);
         return game;
     }
@@ -53,6 +55,7 @@ public class GameService {
             .orElseThrow(() -> new NotFoundException("Game not found"));
         game.setPlayer2(player2);
         game.setStatus(IN_PROGRESS);
+        game.setTurn("X");
         GameStorage.getInstance().setGames(game);
         return game;
     }
@@ -75,6 +78,8 @@ public class GameService {
         } else if (Boolean.TRUE.equals(checkWinner(game.getBoard(), TicToe.O))) {
             game.setWinner(TicToe.O);
         }
+
+        game.setTurn(gamePlay.getTurn());
 
         GameStorage.getInstance().setGames(game);
         return game;
